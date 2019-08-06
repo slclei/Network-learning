@@ -37,4 +37,46 @@ d = (N+P-1)L/R
 
 Queuing Delays and Packet Loss
 
+Output buffer/queue, queuing delays, packet loss
+
+Forwarding Tables and Routing Protocols
+
+1.3.2 Circuit Switching
+
+Circuit switching and packet switching are two ways to move data.
+
+Multiplexing in Circuit-Switched Networks
+
+Frequency-division multiplexing: Frequency spectrum is divided. Bandwidth FM raio stations.
+Time-division multiplexing: Time is divided. Slot, Frame.
+
+Packet Switching VS. Circuit Switching
+
+Circuit switching: Need Reservation, rate guaranteed, allocated, not considering of demand;
+Packet switching: No Reservation, rate not guaranteed, on demand.
+
+1.3.3 A Network of Networks
+
+Network Structure 1: all of the access ISPs (Customer) are connected with a single global transit ISP (Provider.).
+
+Network Structure 2: Single to multiple global transit ISPs, which are interconnected as well.
+
+Network Structure 3: Multi-tier hierarchy.
+Access ISP, connected to Regional ISP, connected to T1 ISPs (global)
+Or Access ISP connected to T1 ISP.
+
+Network Structure 4: ISPs in Structure 3 and following points.
+Points of presence (POPs):a group of one or more routers in Provider's network, to connect customer ISPs.
+                          No bottom level (access ISP)
+Multi-homing: ISP can connect to two or more provider ISPs.
+             No T1 ISPs
+Peering: customer ISPs in same level connect to each other directly, without paying to each other.
+Internet exchange points (IXPs): a meeting point created by a third-party, to peer multiple IPSPs.
+
+Network Structure 5: On top of Network Structure 4, Content provider is added, which can bypass T1 ISP.
+
+1.4 Delay, Loss and Throughput in Packet-Switched Networks
+
+1.4.1 Overview of Delay
+Nodal delay: nodal processing delay, queuing delay, transmission delay, propagation delay.
 
