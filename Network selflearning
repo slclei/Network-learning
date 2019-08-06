@@ -5,4 +5,36 @@ Define of network: (1) Hardware and software description (2) Services descriptio
 
 Define of protocol: Defines the format and order of messages, and the actions taken in responese to these behavior.
 
-1.2 
+1.2 The Network Edge
+End systems/ host
+
+1.2.1 Access Networks
+
+Home network: DSL and Cable
+
+Downstream/Upstream channel.
+
+FTTH, fiber to the home.
+Active Optical networks / Passive Optical Networks
+
+Ethernet in LAN
+WIFI
+
+1.2.2 Physical Media
+Transmission media
+
+Guided media: fiber
+Unguided media: wireless LAn/digital satellite channel
+
+1.3 The Network Core
+
+1.3.1 Packet Switching
+Messages from source are broken into packets, and packets are transmitted to destination. 
+
+Store and Forward Transmission
+For a path with N links, each of rate of R, and packets size of L, number of P, the delay end-to-end delay is:
+d = (N+P-1)L/R
+
+Queuing Delays and Packet Loss
+
+
