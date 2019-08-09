@@ -161,7 +161,21 @@ Depend on medium, link.
 
 The OSI Model
 
+Open Systems Interconnection (OSI) model, with 7 layers.
 
+Physical -> Link -> Network -> Transport ->(Session) -> (Presentation) -> Applilcation
+(Hardware)          (Mixed)    (Software)
+
+Presentation layer: allow communicating applications to interpret the meaning of data exchanged.
+Data compression and data encryption. 
+Format free for data represented/stored?
+
+Session layer: delimite and synchronization of data exchange.
+For save and backup?
+
+Up to the application developer to design function.
+
+1.5.2 Encapsulation
 
 
 
