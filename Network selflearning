@@ -107,6 +107,60 @@ As the transmission rates are different in each segment of path, it has a bottle
 
 1.5.1 Layered Architecture
 
+Layer: provide the same service to the layer above it, and uses same services from the layer below it.
+Remained of the system remains unchanged when a layer's implementation is changed.
+
+Protocol Layering
+
+Protocols in layer: each protocol belongs to one of the layers;
+Service model: services that a layer offers to the layer above.
+
+Physical -> Link -> Network -> Transport ->(Session) -> (Presentation) -> Applilcation
+(Hardware)          (Mixed)    (Software)
+
+Pro: easier to update
+Con: duplicate function; one layer need information from other
+
+Protocol stack.
+
+APPLICATION LAYER
+Application layer: network applications and their application layer protocols reside.
+ 
+Examples: HTTP, SMTP, FTP, DNS, etc...
+Message: packet of information exchanged at the application layer.
+
+Transport Layer
+Transport Layer: transport application layer messages between app endpoints.
+
+Examples: TCP and UDP.
+
+TCP: Connection-oriented, guaranteed delivery, flow control, breaks long message into shorter segment.
+UDP: Connectionless, no-frill, no flow control, no congestion control.
+
+Network Layer (IP layer)
+Network Layer: move network-layer packets (datagrams) from one host to another.
+
+Examples: IP, and routing protocols.
+
+Link Layer
+Link Layer: provide service to move a packet from one node to next.
+IP layer passes the datagram down to the link layer, and deliver it to next.
+
+Examples: Ethernet, WiFi, DOCSIS, etc...
+
+A datagram may be handled by several link layer protocols.
+
+Link layer packets: frames.
+
+Physical Layer
+Physical Layer: move the individual bits within the frame from one node to the next.
+
+Examples: several protocols in Ethernet, etc...
+
+Depend on medium, link.
+
+The OSI Model
+
 
 
 
