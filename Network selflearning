@@ -78,5 +78,36 @@ Network Structure 5: On top of Network Structure 4, Content provider is added, w
 1.4 Delay, Loss and Throughput in Packet-Switched Networks
 
 1.4.1 Overview of Delay
-Nodal delay: nodal processing delay, queuing delay, transmission delay, propagation delay.
+Nodal delay: 
+nodal processing delay (us): examine the packet's header and destination direaction, check for bit-level errors.
+                             After this, packet is directed to the queue.
+***queuing delay (us to ms): waiting to be transmitted. Vary from packet to packet.  
+transmission delay (us to ms): L/R, whole packet transmitted from A to B. Packet length and rate
+propagation delay(ms): time for a bit travels from A to B. Distance.
+
+1.4.2 Queuing delay and packet loss
+
+Traffic intensity: La/R.
+L: packet size; a: packet coming rate; R:transmission rate.
+
+Packet Loss, due to the full of buffer.
+
+1.4.3 End to End Delay
+Including N-1 routers, source and destination.
+
+Trace-route Program: Source sends N packets to a destination, and each router and destination will send message back to confirm receive it; So the source can reconstruct the delivery path.
+
+End system, application, and other delays
+Delay by design.
+
+1.4.4 Throughput in Computer Networks
+As the transmission rates are different in each segment of path, it has a bottleneck link.
+
+1.5 Protocol Layers and Their service models
+
+1.5.1 Layered Architecture
+
+
+
+
 
