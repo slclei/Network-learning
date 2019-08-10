@@ -177,5 +177,17 @@ Up to the application developer to design function.
 
 1.5.2 Encapsulation
 
+Link layer switch: Link and Physical layer;
+Router: Network, Link and Physical layer.
+
+Encapsulation: In Source, Message in application layer, M was sent Transport layer, adding a head (Ht) in front of M, to form a Segment;
+               then Segment was sent to Network, adding head (Hn) in the front, to form Datagram;
+               then Datagram was sent to Link layer, adding head (Hl) in the front, to form Frame.
+               
+A packet at each layer has two part: header fields, and payload field.
+Payload field: a packet from the layer above.
+
+1.6 Networks Under Attack
+
 
 
