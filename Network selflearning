@@ -291,9 +291,19 @@ a no other traffic. throughput?
 A: 500 kbps = 62.5 kB/s.
 
 b File is 4 MB. Dividing by throughput, How long from A to B?
-A: L=62.5 kB. Packet number n = 6.4*10^4.
+A: L=62.5 kB. Packet number n = 64. t = 64 s.
 
 c R2 = 100 kbps = 12.5 kB/s.
-A: L=12.5 kB. n = 3.2 *10^5. 
+A: L=12.5 kB. n = 320. t = 320 s.
 
-
+R20 How end system A creates packets from the file. what information direct packet to the destination in switch?
+A: Describe: The file may be divided into several packets, called message M in application layer. 
+			 M is transferred to bottom layer, and header is added in each layer as orientation.
+			 Header includes, Transmission (Segment), Network (Datagram), Link (Packet).
+		     For packet switch, Hl (Link layer) is used;
+		     For router, Hl and Hn are used.
+ Packet switch: header in Link layer.
+ 
+ Reason: in each packet switch, it will determine next out link by visit header of link layer, which is closest to the final destination.
+ 
+ R21 
